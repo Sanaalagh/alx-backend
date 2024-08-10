@@ -8,11 +8,14 @@ from flask import request
 app = Flask(__name__)
 
 # Configure available languages
+
+
 class Config:
     """Config class"""
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
+
 
 app.config.from_object(Config)
 

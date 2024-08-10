@@ -20,6 +20,7 @@ app.config.from_object(Config)
 # Initialize Babel
 babel = Babel(app)
 
+
 @app.route('/')
 def index() -> str:
     """main route"""
